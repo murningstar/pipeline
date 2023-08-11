@@ -1,0 +1,15 @@
+FROM node:latest
+
+RUN mkdir /usr/delivery
+
+WORKDIR /usr/delivery
+
+COPY package.json ./
+
+RUN npm install
+
+COPY index.js .
+
+EXPOSE 7337
+
+CMD ["node", "index.js"]
