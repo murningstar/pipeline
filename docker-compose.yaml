@@ -64,7 +64,7 @@ services:
         condition: service_healthy
 
   processing:
-    image: processing
+    image: michaelmorningstar/processing:latest
     networks:
       - pipelinenetwork
     depends_on:
