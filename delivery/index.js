@@ -62,7 +62,7 @@ consumer.run({
                 value: message.value.toString(),
             });
         }
-        console.log({
+        console.log("Cached into redis: ",{
             key: message.key.toString(),
             value: message.value.toString(),
             headers: message.headers,
